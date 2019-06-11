@@ -1,0 +1,156 @@
+body {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  color: #6f6767;
+}
+
+a {
+  color: #6f6767;
+}
+a:hover {
+  color: #17223f;
+  text-decoration: none;
+}
+a:focus {
+  outline: 0;
+}
+
+.bg-color {
+  background-color: #f4f4f4;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.form-wizard-wrapper.form-wizard-1 {
+  padding: 20px 40px;
+  max-width: 100%;
+}
+.form-wizard-wrapper.form-wizard-1 .form-wizard-content-wrapper {
+  height: auto;
+}
+.form-wizard-wrapper.form-wizard-1 .form-wizard-content {
+  transform: none;
+  display: none;
+  position: static;
+  padding: 0;
+}
+.form-wizard-wrapper.form-wizard-1 .form-wizard-content.show {
+  display: block;
+}
+
+.form-wizard-1-image {
+  background-image: url("../../assets/images/form-wizard-1.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-color: rgba(0, 0, 0, 0.22);
+  background-blend-mode: darken;
+  color: #ffffff;
+  padding: 30px;
+}
+.form-wizard-1-image .form-wizard-1-image-content h1 {
+  background-color: #3bb6b6;
+  margin: 0;
+  padding: 10px 30px;
+}
+.form-wizard-1-image .form-wizard-1-image-content h5 {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.form-wizard-wrapper {
+  max-width: 767px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  padding-top: 8px;
+  z-index: 1;
+}
+.form-wizard-wrapper .form-wizardmove-button {
+  position: absolute;
+  width: 153.4px;
+  left: 0;
+  top: -4px;
+  bottom: -4px;
+  border-radius: 4px;
+  background-color: #6f6fa7;
+  -webkit-transition: all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1) 0s;
+  -moz-transition: all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1) 0s;
+  -ms-transition: all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1) 0s;
+  -o-transition: all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1) 0s;
+  transition: all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1) 0s;
+  -webkit-box-shadow: 0 16px 26px -10px rgba(244, 67, 54, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
+  -moz-box-shadow: 0 16px 26px -10px rgba(244, 67, 54, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
+  -ms-box-shadow: 0 16px 26px -10px rgba(244, 67, 54, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
+  -o-box-shadow: 0 16px 26px -10px rgba(244, 67, 54, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
+  box-shadow: 0 16px 26px -10px rgba(244, 67, 54, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
+}
+.form-wizard-wrapper ul {
+  background-color: #3bb6b6;
+  z-index: 1;
+  border-radius: 4px;
+}
+.form-wizard-wrapper ul li a {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  color: #ffffff;
+}
+.form-wizard-wrapper ul li a span {
+  position: relative;
+  z-index: 1;
+}
+.form-wizard-wrapper ul li.active a {
+  background-color: #ffffff;
+}
+.form-wizard-wrapper .form-wizard-content {
+  background-color: #ffffff;
+  padding: 20px;
+  color: #777777;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1) 0s;
+  transform: translate3d(100%, 0px, 0px);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.form-wizard-wrapper .form-wizard-content.show {
+  transform: translate3d(0px, 0px, 0px);
+}
+.form-wizard-wrapper .form-wizard-content h6 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.form-wizard-wrapper .form-wizard-content .form-wizard-next-btn,
+.form-wizard-wrapper .form-wizard-content .form-wizard-previous-btn {
+  background-color: #3bb6b6;
+  color: #ffffff;
+  display: inline-block;
+  padding: 4px 20px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+.form-wizard-wrapper .form-wizard-content .form-wizard-previous-btn {
+  background-color: #f1f1f1;
+  color: #000000;
+}
+
+.form-wizard-content-wrapper {
+  height: 280px;
+  position: relative;
+}
+
+.form-wizard-3-section {
+  background-image: url("../../assets/images/form-wizard-3.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.form-wizard-3-section .form-wizard-content-wrapper {
+  background-color: #ffffff;
+}

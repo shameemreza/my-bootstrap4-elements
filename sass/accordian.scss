@@ -1,0 +1,390 @@
+@import "variables";
+@import "mixin";
+body{
+	font-family: 'Lora', serif;
+	font-size: 16px;
+	color: $primary;
+}
+a{
+	color: $primary;
+	&:hover{
+		color: #ea9a1f;
+		text-decoration: none;
+	}
+	&:focus{
+		outline: 0;
+	}
+}
+.bg-color {
+	background-color: #f9f0f0;
+}
+.button {
+	background-color: $white;
+	border-radius: 40px;
+	border: 2px solid $white;
+	color: $primary;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.7;
+	padding: 10px 40px;
+	@include transition(0.3s linear all);
+	&:hover, &:focus{
+		background-color: $secondary;
+		color: $white;
+		@include transition(0.3s linear all);
+	}
+}
+.bg-color{
+	background-color: #f1f1f1;
+}
+.section-heading {
+	font-size: 40px;
+	font-weight: bold;
+	color: #333333;
+}
+.section{
+	padding: 80px 0;
+}
+.accordion-style-1{
+	.card{
+		margin-bottom: 2px;
+	}
+	.card-header{
+		background-color:#17223f;
+		border-color:#17223f;
+		color: #ffffff;
+		cursor: pointer;
+		&[aria-expanded="true"],&[aria-expanded="false"]{
+			&:before{
+				content: "\f068";
+				font-size: 19px;
+				font-family: fontawesome;
+				vertical-align: middle;
+				margin-right: 5px;
+			}
+		}
+		&[aria-expanded="false"]{
+			&:before{
+				content: "\f067";
+			}
+		}
+	}
+	#accordion-1-second{
+		.card-header{
+			&[aria-expanded="true"],&[aria-expanded="false"]{
+				&:before{
+					display: none;
+				}
+				&::after {
+					background-color: #fff;
+					color: #17223f;
+					content: "\f106";
+					display: inline-block;
+					float: right;
+					font-family: fontawesome;
+					font-size: 19px;
+					font-weight: bold;
+					height: 20px;
+					line-height: 19px;
+					margin-left: 5px;
+					text-align: center;
+					vertical-align: middle;
+					width: 20px;
+					border-radius: 50%;
+				}
+			}
+			&[aria-expanded="false"]{
+				&::after {
+					content: "\f107";
+					line-height: 22px;
+				}
+			}
+		}
+	}
+}
+.accordion-style-2{
+	.card{
+		margin-bottom: 2px;
+	}
+	.card-header{
+		padding-left: 60px;
+		position: relative;
+		cursor: pointer;
+		&[aria-expanded="true"],&[aria-expanded="false"]{
+			&:before{
+				background-color:#17223f;
+				bottom: -1px;
+				color: #ffffff;
+				content: "\f068";
+				font-family: fontawesome;
+				font-size: 19px;
+				left: 0;
+				line-height: 50px;
+				margin-right: 5px;
+				position: absolute;
+				text-align: center;
+				top: 0;
+				vertical-align: middle;
+				width: 50px;
+			}
+		}
+		&[aria-expanded="false"]{
+			&:before{
+				content: "\f067";
+			}
+		}
+	}
+	#accordion-2-second{
+		.card-header{
+			padding-right: 60px;
+			padding-left: 1.25rem;
+			&[aria-expanded="true"],&[aria-expanded="false"]{
+				&:before{
+					display: none;
+				}
+				&::after {
+					background-color:#17223f;
+					color: #ffffff;
+					bottom: -1px;
+					content: "\f106";
+					font-family: fontawesome;
+					font-size: 19px;
+					right: 0;
+					left: auto;
+					line-height: 50px;
+					margin-left: 5px;
+					position: absolute;
+					text-align: center;
+					top: 0;
+					vertical-align: middle;
+					width: 50px;
+				}
+			}
+			&[aria-expanded="false"]{
+				&::after {
+					content: "\f107";
+				}
+			}
+		}
+	}
+}
+.accordion-style-3{
+	.card{
+		margin-bottom: 2px;
+	}
+	.card-header{
+		padding-right: 60px;
+		position: relative;
+		cursor: pointer;
+		&[aria-expanded="true"],&[aria-expanded="false"]{
+			&:before{
+				bottom: -1px;
+				color:#17223f;
+				content: "\f067";
+				font-family: fontawesome;
+				font-size: 19px;
+				right: 0;
+				line-height: 50px;
+				position: absolute;
+				text-align: center;
+				top: 0;
+				vertical-align: middle;
+				width: 50px;
+				transform: rotate(45deg);
+				transition: 0.3s linear all;
+			}
+		}
+		&[aria-expanded="false"]{
+			&:before{
+				transform: rotate(0deg);
+				transition: 0.3s linear all;
+			}
+		}
+	}
+	#accordion-3-second{
+		.card-header{
+			padding-left: 60px;
+			padding-right: 1.25rem;
+			&[aria-expanded="true"],&[aria-expanded="false"]{
+				&:before{
+					display: none;
+				}
+				&::after {
+					bottom: -1px;
+					color:#17223f;
+					content: "\f106";
+					font-family: fontawesome;
+					font-size: 19px;
+					line-height: 50px;
+					position: absolute;
+					left: 0;
+					text-align: center;
+					top: 0;
+					transition: 0.3s linear all;
+					vertical-align: middle;
+					width: 50px;
+					transform: rotate(0deg);
+				}
+			}
+			&[aria-expanded="false"]{
+				&::after {
+					transform: rotate(180deg);
+					transition: 0.3s linear all;
+				}
+			}
+		}
+	}
+}
+.accordion-style-4{
+	.card{
+		margin-bottom: 10px;
+		border-width: 0 0 0 2px;
+		border-style: solid;
+		border-color:#17223f;
+		border-radius: 0;
+
+	}
+	.card-header{
+		padding-right: 60px;
+		position: relative;
+		cursor: pointer;
+		border: none;
+		&[aria-expanded="true"],&[aria-expanded="false"]{
+			&:before{
+				bottom: -1px;
+				color: #333333;
+				content: "\f067";
+				font-family: fontawesome;
+				font-size: 19px;
+				right: 0;
+				line-height: 50px;
+				position: absolute;
+				text-align: center;
+				top: 0;
+				vertical-align: middle;
+				width: 50px;
+				transform: rotate(45deg);
+				transition: 0.3s linear all;
+			}
+		}
+		&[aria-expanded="false"]{
+			&:before{
+				transform: rotate(0deg);
+				transition: 0.3s linear all;
+			}
+		}
+	}
+	#accordion-4-second{
+		.card{
+			background-color: #17223f;
+			border: none;
+			color: #ffffff;
+			.card-body{
+				border-top: 1px solid #ffffff;
+			}
+		}
+		.card-header{
+
+			&[aria-expanded="true"],&[aria-expanded="false"]{
+				&::before {
+					bottom: -1px;
+					color: #ffffff;
+					content: "\f106";
+					font-family: fontawesome;
+					font-size: 19px;
+					line-height: 50px;
+					position: absolute;
+					right: 0;
+					text-align: center;
+					top: 0;
+					transition: 0.3s linear all;
+					vertical-align: middle;
+					width: 50px;
+					transform: rotate(0deg);
+				}
+			}
+			&[aria-expanded="false"]{
+				&::before {
+					transform: rotate(180deg);
+					transition: 0.3s linear all;
+				}
+			}
+		}
+	}
+}
+.accordion-style-5{
+	.card{
+		margin-bottom: 15px;
+		border: none;
+
+	}
+	.card-header{
+		background-color: #17223f;
+		border: none;
+		color: #ffffff;
+		cursor: pointer;
+		padding-right: 60px;
+		position: relative;
+		border-radius: 40px;
+		&[aria-expanded="true"],&[aria-expanded="false"]{
+			&:before{
+				bottom: -1px;
+				color: #ffffff;
+				content: "\f067";
+				font-family: fontawesome;
+				font-size: 19px;
+				line-height: 50px;
+				position: absolute;
+				right: 0;
+				text-align: center;
+				top: 0;
+				transform: rotate(45deg);
+				transition: 0.3s linear all;
+				vertical-align: middle;
+				width: 50px;
+			}
+		}
+		&[aria-expanded="false"]{
+			&:before{
+				transform: rotate(0deg);
+				transition: 0.3s linear all;
+			}
+		}
+	}
+	#accordion-5-second{
+		.card{
+			border: none;
+		}
+		.card-header{
+			&[aria-expanded="true"]{
+				border-radius: 40px 40px 0 0;
+			}
+			&[aria-expanded="true"],&[aria-expanded="false"]{
+
+				&::before {
+					bottom: -1px;
+					color: #ffffff;
+					content: "\f106";
+					font-family: fontawesome;
+					font-size: 19px;
+					line-height: 50px;
+					position: absolute;
+					right: 0;
+					text-align: center;
+					top: 0;
+					transition: 0.3s linear all;
+					vertical-align: middle;
+					width: 50px;
+					transform: rotate(0deg);
+				}
+			}
+			&[aria-expanded="false"]{
+				&::before {
+					transform: rotate(180deg);
+					transition: 0.3s linear all;
+				}
+			}
+		}
+	}
+}

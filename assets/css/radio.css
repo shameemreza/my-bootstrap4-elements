@@ -1,0 +1,116 @@
+body {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  color: #6f6767;
+}
+
+a {
+  color: #6f6767;
+}
+a:hover {
+  color: #17223f;
+  text-decoration: none;
+}
+a:focus {
+  outline: 0;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.cutsom-radio-row {
+  margin-bottom: 20px;
+  position: relative;
+}
+.cutsom-radio-row input[type="radio"] {
+  opacity: 0;
+}
+.cutsom-radio-row input[type="radio"] + label {
+  padding-left: 27px;
+}
+.cutsom-radio-row input[type="radio"] + label::before {
+  background-color: #3bb6b6;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  content: "";
+  cursor: pointer;
+  height: 35px;
+  left: 0;
+  position: absolute;
+  top: -5px;
+  width: 35px;
+}
+.cutsom-radio-row input[type="radio"] + label::after {
+  transition: all 0.2s ease;
+  transform: scale(0);
+  opacity: 0;
+}
+.cutsom-radio-row input[type="radio"]:checked + label::after, .cutsom-radio-row input[type="radio"]:not(:checked) + label::after {
+  background-color: #ffffff;
+  border-radius: 50%;
+  content: "";
+  cursor: pointer;
+  display: inline-block;
+  height: 15px;
+  left: 10px;
+  position: absolute;
+  top: 6px;
+  transition: all 0.2s ease;
+  width: 15px;
+}
+.cutsom-radio-row input[type="radio"]:checked + label::after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.cutsom-radio-style-row-2 input[type="radio"] + label {
+  padding-left: 17px;
+}
+.cutsom-radio-style-row-2 input[type="radio"] + label::before {
+  width: 25px;
+  height: 25px;
+  top: 0;
+}
+.cutsom-radio-style-row-2 input[type="radio"] + label::after {
+  transition: all 0.2s ease;
+  transform: scale(2);
+  opacity: 0;
+}
+.cutsom-radio-style-row-2 input[type="radio"]:checked + label::after, .cutsom-radio-style-row-2 input[type="radio"]:not(:checked) + label::after {
+  height: 7px;
+  width: 7px;
+  top: 9px;
+  left: 9px;
+}
+.cutsom-radio-style-row-2 input[type="radio"]:checked + label::after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.cutsom-radio-style-row-3 input[type="radio"] + label {
+  padding-left: 27px;
+}
+.cutsom-radio-style-row-3 input[type="radio"] + label::before {
+  width: 35px;
+  height: 35px;
+}
+.cutsom-radio-style-row-3 input[type="radio"] + label::after {
+  transition: all 0.2s ease;
+  transform: scale(2);
+  opacity: 0;
+}
+.cutsom-radio-style-row-3 input[type="radio"]:checked + label::after, .cutsom-radio-style-row-3 input[type="radio"]:not(:checked) + label::after {
+  background-color: transparent;
+  color: #ffffff;
+  content: "\f00c";
+  font-family: 'FontAwesome';
+  height: auto;
+  left: 10px;
+  top: 1px;
+  width: auto;
+}
+.cutsom-radio-style-row-3 input[type="radio"]:checked + label::after {
+  transform: scale(1);
+  opacity: 1;
+}

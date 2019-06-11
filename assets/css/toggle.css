@@ -1,0 +1,226 @@
+body {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  color: #6f6767;
+}
+
+a {
+  color: #6f6767;
+}
+a:hover {
+  color: #17223f;
+  text-decoration: none;
+}
+a:focus {
+  outline: 0;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.custom-toggle-row {
+  margin-bottom: 15px;
+}
+
+.custom-toggle-style-1 label {
+  cursor: pointer;
+  height: 35px;
+  margin-bottom: 0;
+  position: relative;
+  width: 70px;
+}
+.custom-toggle-style-1 label .off, .custom-toggle-style-1 label .on {
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 8px;
+  z-index: 1;
+}
+.custom-toggle-style-1 label .off {
+  right: 6px;
+}
+.custom-toggle-style-1 label .on {
+  left: 13px;
+}
+.custom-toggle-style-1 input[type="checkbox"] {
+  width: 100%;
+  opacity: 0;
+}
+.custom-toggle-style-1 input[type="checkbox"] ~ .on {
+  transition: 0.4s linear all;
+  opacity: 0;
+  visibility: hidden;
+}
+.custom-toggle-style-1 input[type="checkbox"]:checked ~ .on {
+  transition: 0.4s linear all;
+  opacity: 1;
+  visibility: visible;
+  color: #ffffff;
+}
+.custom-toggle-style-1 input[type="checkbox"]:checked ~ .off {
+  transition: 0.4s linear all;
+  opacity: 0;
+  visibility: hidden;
+}
+.custom-toggle-style-1 input[type="checkbox"]:checked ~ .custom-toggle-inner {
+  background-color: #3bb6b6;
+}
+.custom-toggle-style-1 input[type="checkbox"]:checked ~ .custom-toggle-inner::before {
+  transition: 0.4s linear all;
+  transform: translateX(31px);
+}
+.custom-toggle-style-1 .custom-toggle-inner {
+  background-color: #eeeeee;
+  border-radius: 40px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.custom-toggle-style-1 .custom-toggle-inner::before {
+  background-color: #ffffff;
+  border-radius: 50%;
+  content: "";
+  height: 30px;
+  left: 5px;
+  position: absolute;
+  top: 2px;
+  transition: 0.4s linear all;
+  width: 30px;
+}
+
+.custom-toggle-style-2 label {
+  cursor: pointer;
+  height: 35px;
+  margin-bottom: 0;
+  position: relative;
+  width: 70px;
+}
+.custom-toggle-style-2 label .off, .custom-toggle-style-2 label .on {
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 8px;
+  z-index: 1;
+}
+.custom-toggle-style-2 label .off {
+  right: 6px;
+}
+.custom-toggle-style-2 label .on {
+  left: 11px;
+}
+.custom-toggle-style-2 input[type="checkbox"] {
+  width: 100%;
+  opacity: 0;
+}
+.custom-toggle-style-2 input[type="checkbox"] ~ .on {
+  transition: 0.4s linear all;
+  opacity: 0;
+  visibility: hidden;
+}
+.custom-toggle-style-2 input[type="checkbox"]:checked ~ .on {
+  transition: 0.4s linear all;
+  opacity: 1;
+  visibility: visible;
+  color: #ffffff;
+}
+.custom-toggle-style-2 input[type="checkbox"]:checked ~ .off {
+  transition: 0.4s linear all;
+  opacity: 0;
+  visibility: hidden;
+}
+.custom-toggle-style-2 input[type="checkbox"]:checked ~ .custom-toggle-inner {
+  background-color: #3bb6b6;
+}
+.custom-toggle-style-2 input[type="checkbox"]:checked ~ .custom-toggle-inner::before {
+  transition: 0.4s linear all;
+  transform: translateX(31px);
+}
+.custom-toggle-style-2 .custom-toggle-inner {
+  background-color: #eeeeee;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.custom-toggle-style-2 .custom-toggle-inner::before {
+  background-color: #ffffff;
+  content: "";
+  height: 30px;
+  left: 5px;
+  position: absolute;
+  top: 2px;
+  transition: 0.4s linear all;
+  width: 30px;
+}
+
+.custom-toggle-style-3 label {
+  cursor: pointer;
+  height: 35px;
+  margin-bottom: 0;
+  position: relative;
+  width: 70px;
+}
+.custom-toggle-style-3 label .off, .custom-toggle-style-3 label .on {
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 8px;
+  z-index: 1;
+}
+.custom-toggle-style-3 label .off {
+  right: 6px;
+}
+.custom-toggle-style-3 label .on {
+  left: 11px;
+}
+.custom-toggle-style-3 input[type="checkbox"] {
+  width: 100%;
+  opacity: 0;
+}
+.custom-toggle-style-3 input[type="checkbox"] ~ .on {
+  transition: 0.4s linear all;
+  opacity: 0;
+  visibility: hidden;
+}
+.custom-toggle-style-3 input[type="checkbox"]:checked ~ .on {
+  transition: 0.4s linear all;
+  opacity: 1;
+  visibility: visible;
+  color: #ffffff;
+}
+.custom-toggle-style-3 input[type="checkbox"]:checked ~ .off {
+  transition: 0.4s linear all;
+  opacity: 0;
+  visibility: hidden;
+}
+.custom-toggle-style-3 input[type="checkbox"]:checked ~ .custom-toggle-inner {
+  background-color: #3bb6b6;
+}
+.custom-toggle-style-3 input[type="checkbox"]:checked ~ .custom-toggle-inner::before {
+  transition: 0.3s linear all;
+  transform: translateX(31px);
+}
+.custom-toggle-style-3 .custom-toggle-inner {
+  background-color: #eeeeee;
+  border-radius: 10px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.custom-toggle-style-3 .custom-toggle-inner::before {
+  background-color: #ffffff;
+  border-radius: 10px;
+  content: "";
+  height: 30px;
+  left: 5px;
+  position: absolute;
+  top: 2px;
+  transition: 0.3s linear all;
+  width: 30px;
+}

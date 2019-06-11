@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shameem's BT Element</title>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="assets/css/input-file.css">
+</head>
+<body>
+	<section class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="section-heading text-center">Input File</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 mt-5">
+					<div class="custom-file-input-style-simple">
+						<input class="form-control" id="custom-form-control" type="text">
+						<div class="custom-file-btn-wrap">
+							<span class="custom-file-browse">Browse</span>
+							<input class="custom-file-input-browse" id="custom-file-input-browse" type="file">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 mt-5">
+					<div class="custom-file-input-style-simple">
+						<input class="form-control" id="custom-form-control-2" type="text">
+						<div class="custom-file-btn-wrap">
+							<span class="custom-file-browse"><i class="fa fa-upload" aria-hidden="true"></i> Browse</span>
+							<input class="custom-file-input-browse" id="custom-file-input-browse-2" type="file">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 mt-5">
+					<div class="custom-file-input-style-circle">
+						<div class="custom-file-btn-wrap">
+							<span class="custom-file-browse"><i class="fa fa-cloud-upload" aria-hidden="true"></i></span>
+							<input class="custom-file-input-browse" id="custom-file-input-browse-2" type="file">
+						</div>
+						<input class="form-control" id="custom-form-control-2" placeholder="Upload Your File" type="text">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 mt-5">
+					<div class="custom-file-input-style-circle bg-linear-color">
+						<div class="custom-file-btn-wrap">
+							<span class="custom-file-browse"><i class="fa fa-upload" aria-hidden="true"></i></span>
+							<input class="custom-file-input-browse" id="custom-file-input-browse-2" type="file">
+						</div>
+						<input class="form-control" id="custom-form-control-2" placeholder="Upload Your File" type="text">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 mt-5">
+					<div class="custom-file-input-style-rounded">
+						<div class="custom-file-btn-wrap">
+							<span class="custom-file-browse"><i class="fa fa-cloud-upload" aria-hidden="true"></i></span>
+							<input class="custom-file-input-browse" id="custom-file-input-browse-2" type="file">
+						</div>
+						<input class="form-control" id="custom-form-control-2" placeholder="Upload Your File" type="text">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 mt-5">
+					<div class="custom-file-input-style-rounded bg-linear-color">
+						<div class="custom-file-btn-wrap">
+							<span class="custom-file-browse"><i class="fa fa-upload" aria-hidden="true"></i></span>
+							<input class="custom-file-input-browse" id="custom-file-input-browse-2" type="file">
+						</div>
+						<input class="form-control" id="custom-form-control-2" placeholder="Upload Your File" type="text">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 mt-5">
+					<div class="custom-file-input-style-rounded no-rounded">
+						<div class="custom-file-btn-wrap">
+							<span class="custom-file-browse"><i class="fa fa-upload" aria-hidden="true"></i></span>
+							<input class="custom-file-input-browse" id="custom-file-input-browse-2" type="file">
+						</div>
+						<input class="form-control" id="custom-form-control-2" placeholder="Upload Your File" type="text">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 mt-5">
+					<div class="custom-file-input-style-rounded no-rounded bg-linear-color">
+						<div class="custom-file-btn-wrap">
+							<span class="custom-file-browse"><i class="fa fa-upload" aria-hidden="true"></i></span>
+							<input class="custom-file-input-browse" id="custom-file-input-browse-2" type="file">
+						</div>
+						<input class="form-control" id="custom-form-control-2" placeholder="Upload Your File" type="text">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--JQuery-->
+	<script src="assets/js/jqyery.js"></script>
+	<!--Bootstrap js-->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- custom js -->
+	<script src="assets/js/custom.js"></script>
+	<script>
+		$('[data-toggle="elementscroll"]').on("click", function(event){
+			if (this.hash !== "") {
+				event.preventDefault();
+				var hash = this.hash;
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800);
+
+			} 
+		});
+		/*End Smooth scroll*/
+	</script>
+</body>
+</html>

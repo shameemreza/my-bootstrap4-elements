@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shameem's BT Element</title>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="assets/css/toggle.css">
+</head>
+<body>
+	<section class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="section-heading text-center">Toggle</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 mt-5">
+					<div class="custom-toggle-row custom-toggle-style-1">
+						<label for="toggle1">
+							<input id="toggle1" type="checkbox">
+							<div class="custom-toggle-inner"></div>
+						</label>
+					</div>
+					<div class="custom-toggle-row custom-toggle-style-1">
+						<label for="toggle2">
+							<input id="toggle2" type="checkbox">
+							<span class="on">ON</span>
+							<span class="off">OFF</span>
+							<div class="custom-toggle-inner"></div>
+						</label>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 mt-5">
+					<div class="custom-toggle-style-2 custom-toggle-row">
+						<label for="toggle3">
+							<input id="toggle3" type="checkbox">
+							<div class="custom-toggle-inner"></div>
+						</label>
+					</div>
+					<div class="custom-toggle-style-2 custom-toggle-row">
+						<label for="toggle4">
+							<input id="toggle4" type="checkbox">
+							<span class="on">ON</span>
+							<span class="off">OFF</span>
+							<div class="custom-toggle-inner"></div>
+						</label>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 mt-5">
+					<div class="custom-toggle-style-3 custom-toggle-row">
+						<label for="toggle5">
+							<input id="toggle5" type="checkbox">
+							<div class="custom-toggle-inner"></div>
+						</label>
+					</div>
+					<div class="custom-toggle-style-3 custom-toggle-row">
+						<label for="toggle6">
+							<input id="toggle6" type="checkbox">
+							<span class="on">ON</span>
+							<span class="off">OFF</span>
+							<div class="custom-toggle-inner"></div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--JQuery-->
+	<script src="assets/js/jqyery.js"></script>
+	<!--Bootstrap js-->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- custom js -->
+	<script src="assets/js/custom.js"></script>
+	<script>
+		$('[data-toggle="elementscroll"]').on("click", function(event){
+			if (this.hash !== "") {
+				event.preventDefault();
+				var hash = this.hash;
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800);
+
+			} 
+		});
+		/*End Smooth scroll*/
+	</script>
+</body>
+</html>
